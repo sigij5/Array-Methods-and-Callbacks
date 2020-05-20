@@ -81,6 +81,7 @@ Parameters:
 function getWinnersByYear(cb,cb1, cb2, data) {
     const Year = cb1(cb, data)
     const Winner = cb2(cb, data)
+    
    
     for(let i=0; i < Year.length; i++){
         console.log(`In ${Year[i]}, ${Winner[i]} won the World Cup!`)
@@ -125,11 +126,11 @@ Hint: Investigate your data to find "team initials"!
 Hint: use `.reduce` */
 
 function getCountryWins(data, initials) {
-    
+
 
 };
 
-getCountryWins();
+console.log(getCountryWins(fifaData, 'GER'));
 
 
 /* Stretch 3: Write a function called getGoals() that accepts a parameter `data` and returns the team with the most goals score per appearance (average goals for) in the World Cup finals */
